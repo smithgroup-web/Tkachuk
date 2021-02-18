@@ -1,0 +1,239 @@
+.intro
+    width: 100%
+    min-height: 100vh
+    background-image: url(../img/intro/bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    padding-bottom: 50px
+    @media screen and ( max-width: 1199px )
+        min-height: auto
+        padding-bottom: 20px
+    @media screen and ( max-width: 991px )
+        min-height: 100vh
+    // @media screen and ( max-width: 575px )
+    //     min-height: 80vh
+    &__body
+        min-height: 100vh
+        padding-top: 100px
+        @media screen and ( max-width: 1199px )
+            min-height: auto
+        @media screen and ( max-width: 991px )
+            min-height: 100vh
+        @media screen and ( max-width: 767px )
+            padding-top: 150px
+        // @media screen and ( max-width: 575px )
+        //     min-height: 80vh
+        @media screen and ( max-width: 386px )
+            padding-top: 120px
+    &__logo
+        position: relative
+        z-index: 1
+        width: 142px
+        height: 150px
+        margin: 0 auto
+        margin-bottom: 100px
+        & img
+            width: 100%
+            height: 100%
+        @media screen and ( max-width: 1366px )
+            width: 102px
+            height: 110px
+            margin-bottom: 50px
+        @media screen and ( max-width: 767px )
+            width: 75px
+            height: 80px
+        &::before
+            content: ''
+            position: absolute
+            z-index: -1
+            top: -8px
+            left: -10px
+            width: 100%
+            height: 100%
+            border: 2px solid #9E9E9E
+            @media screen and ( max-width: 1366px )
+                left: -7px
+            @media screen and ( max-width: 767px )
+                left: -5px
+                top: -5px
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 9px
+            left: 9px
+            width: 100%
+            height: 100%
+            border: 2px solid #FF166A
+            @media screen and ( max-width: 1366px )
+                top: 6px
+                left: 6px
+            @media screen and ( max-width: 767px )
+                top: 4px
+                left: 4px
+    &__title
+        font-family: 'Intro Black Italic'
+        font-size: 72px
+        line-height: 72px
+        color: #ffffff
+        text-align: center
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+        @media screen and ( max-width: 767px )
+            font-size: 24px
+            line-height: 24px
+    &__subtitle
+        font-size: 36px
+        line-height: 43px
+        color: #ffffff
+        text-align: center
+        margin-bottom: 80px
+        @media screen and ( max-width: 1366px )
+            font-size: 28px
+            line-height: 35px
+            margin-bottom: 40px
+        @media screen and ( max-width: 767px )
+            font-size: 14px
+            line-height: 17px
+    &-info
+        position: relative
+        display: flex
+        @media screen and ( max-width: 1199px )
+            flex-direction: column
+            align-items: center
+        &__left
+            @media screen and ( max-width: 1199px )
+                order: 2
+                margin-top: 20px
+                margin-bottom: 70px
+        &__text
+            font-size: 24px
+            line-height: 30px
+            color: #ffffff
+            max-width: 395px
+            position: relative
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+                max-width: 270px
+            &::before
+                content: ''
+                position: absolute
+                top: -10px
+                left: 0
+                width: 20%
+                height: 4px
+                background-color: #FF166A
+                box-shadow: 0px 0px 10px #FF166A
+                border-radius: 41px
+        &__socials
+            margin-top: 5px
+            display: flex
+            align-items: center
+            position: relative
+            max-width: 395px
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 50px
+                width: 45%
+                height: 4px
+                background-color: #9E9E9E
+                box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6)
+                border-radius: 41px
+                @media screen and ( max-width: 767px )
+                    right: 0
+            & a
+                outline: none
+                margin-right: 20px
+                &:nth-of-type(2)
+                    margin-right: 22px
+        &__button
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-40%)
+            @media screen and ( max-width: 1199px )
+                transform: none
+                left: 0
+            letter-spacing: 0.1em
+            cursor: pointer
+            font-size: 20px
+            line-height: 25px
+            position: relative
+            text-decoration: none
+            text-transform: uppercase
+            color: #FBD3FF
+            padding: 20px 50px
+            border: 4px solid #000
+            overflow: hidden
+            transition: all 0.3s ease-in-out
+            border: 2px solid #F163FF
+            box-shadow: 0px 0px 47px rgba(241, 99, 255, 0.6), inset 0px 0px 50px rgba(241, 99, 255, 0.4)
+            @media screen and ( max-width: 1199px )
+                order: 1
+                margin-bottom: 50px
+                margin-top: 10px
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+            & span
+                transition: all 0.2s ease-out
+                z-index: 2
+            &:after
+                background: #FFF
+                border: 0px solid #F163FF
+                content: ""
+                height: 155px
+                left: -75px
+                opacity: .8
+                position: absolute
+                top: -50px
+                -webkit-transform: rotate(35deg)
+                transform: rotate(35deg)
+                width: 50px
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+                z-index: 1
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    background-color: #F163FF
+                    text-decoration: none
+                    & span
+                        color: #1E1939
+                    &::after
+                        background: #FFF
+                        border: 20px solid #000
+                        opacity: 0
+                        left: 120%
+                        -webkit-transform: rotate(40deg)
+                        transform: rotate(40deg)
+    &__scroll
+        display: flex
+        justify-content: center
+        & img
+            &:nth-of-type(1)
+                @media screen and ( max-width: 1199px )
+                    display: none
+            &:nth-of-type(2)
+                display: none
+                @media screen and ( max-width: 1199px )
+                    display: flex
+    &__about
+        position: relative
+        z-index: 1
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: -50%
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 30%
+            width: 70%
+            height: 200%
+            background-color: #FF16E8
+            opacity: 0.35
+            filter: blur(100px)

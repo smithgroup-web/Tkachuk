@@ -1,0 +1,256 @@
+.future
+    background: linear-gradient(180deg,#FF2B91 0%, #6200EB 100%)
+    background-image: url(../img/future/bg.jpg) 
+    background-repeat: no-repeat
+    background-size: 100% 75%
+    &__body
+        transform: translateY(-200px)
+        background-image: url(../img/future/plate_bg.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        padding: 150px 0px 100px 0
+        position: relative
+        z-index: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        box-shadow: 0px 0px 95px #000000
+        @media screen and ( max-width: 767px )
+            padding-top: 100px
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            background: linear-gradient(270deg, #6200EB 0%, rgba(255, 22, 106, 0) 91.67%)
+            box-shadow: 0px 0px 59px #6200EB
+            width: 55%
+            height: 6px
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-51%)
+            @media screen and ( max-width: 991px )
+                transform: translateY(-49.5%)
+            @media screen and ( max-width: 767px )
+                transform: translateY(-44%)
+            right: 0
+            background: linear-gradient(360deg, #6200EB 0%, rgba(255, 22, 106, 0) 91.67%)
+            box-shadow: 0px 0px 59px #6200EB
+            width: 6px
+            height: 75%
+    &__line
+        content: ''
+        position: absolute
+        box-shadow: 0px 0px 59px #FF166A
+        &:nth-of-type(2)
+            width: 55%
+            height: 6px
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            background: linear-gradient(90deg, #FF166A 0%, rgba(255, 22, 106, 0.1) 91.67%)
+        &:nth-of-type(3)
+            width: 6px
+            height: 75%
+            top: 50%
+            transform: translateY(-51%)
+            @media screen and ( max-width: 991px )
+                transform: translateY(-49.5%)
+            @media screen and ( max-width: 767px )
+                transform: translateY(-44%)
+            left: 0
+            background: linear-gradient(180deg, #FF166A 0%, rgba(255, 22, 106, 0.1) 91.67%)
+    &__title
+        font-size: 64px
+        line-height: 77px
+        color: #ffffff
+        text-align: center
+        margin-bottom: 80px
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+        @media screen and ( max-width: 991px )
+            font-size: 42px
+            line-height: 52px
+        @media screen and ( max-width: 767px )
+            font-size: 28px
+            line-height: 32px
+    &-blocks
+    &-block
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        @media screen and ( max-width: 767px )
+            margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+        &__circles
+            position: relative
+            margin-right: 20px
+            @media screen and ( max-width: 767px )
+                margin-right: 10px
+            &_big
+                width: 100px
+                height: 100px
+                border-radius: 50%
+                background-color: #FF166A
+                box-shadow: 0px 0px 36px #FF166A
+                opacity: 0.2
+                position: relative
+                animation: pulse 2s infinite
+                @media screen and ( max-width: 991px )
+                    width: 85px
+                    height: 85px
+                @media screen and ( max-width: 767px )
+                    width: 70px
+                    height: 70px
+            &_med
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 70px
+                height: 70px
+                background-color: #FF166A
+                opacity: 0.6
+                border-radius: 50%
+                animation: pulse-extra 2s infinite
+                @media screen and ( max-width: 991px )
+                    width: 55px
+                    height: 55px
+                @media screen and ( max-width: 767px )
+                    width: 40px
+                    height: 40px
+            &_small
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translateX(-50%) translateY(-50%)
+                width: 45px
+                height: 45px
+                background-color: #FF166A
+                border-radius: 50%
+                @media screen and ( max-width: 991px )
+                    width: 30px
+                    height: 30px
+                @media screen and ( max-width: 767px )
+                    width: 15px
+                    height: 15px
+        &:nth-of-type(2)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #FE3583, #FE3583), #FF166A
+                    opacity: 0.2
+                    box-shadow: 0px 0px 36px #FE3583
+                &_med
+                    background: linear-gradient(0deg, #FE3583, #FE3583), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #FE3583, #FE3583), #FF166A
+        &:nth-of-type(3)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #FF5CB4, #FF5CB4), #FF166A
+                    box-shadow: 0px 0px 36px #FF5CB4
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #FF5CB4, #FF5CB4), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #FF5CB4, #FF5CB4), #FF166A
+        &:nth-of-type(4)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #FF5CE5, #FF5CE5), #FF166A
+                    box-shadow: 0px 0px 36px #FF5CE5
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #FF5CE5, #FF5CE5), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #FF5CE5, #FF5CE5), #FF166A
+        &:nth-of-type(5)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #FC5CFF, #FC5CFF), #FF166A
+                    box-shadow: 0px 0px 36px #FC5CFF
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #FC5CFF, #FC5CFF), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #FC5CFF, #FC5CFF), #FF166A
+        &:nth-of-type(6)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #DE5CFF, #DE5CFF), #FF166A
+                    box-shadow: 0px 0px 36px #DE5CFF
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #DE5CFF, #DE5CFF), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #DE5CFF, #DE5CFF), #FF166A
+        &:nth-of-type(7)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #C241FF, #C241FF), #FF166A
+                    box-shadow: 0px 0px 36px #C241FF
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #C241FF, #C241FF), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #C241FF, #C241FF), #FF166A
+        &:nth-of-type(8)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #A041FF, #A041FF), #FF166A
+                    box-shadow: 0px 0px 36px #A041FF
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #A041FF, #A041FF), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #A041FF, #A041FF), #FF166A
+        &:nth-of-type(9)
+            & .future-block__circles
+                &_big
+                    background: linear-gradient(0deg, #8934FF, #8934FF), #FF166A
+                    box-shadow: 0px 0px 36px #8934FF
+                    opacity: 0.2
+                &_med
+                    background: linear-gradient(0deg, #8934FF, #8934FF), #FF166A
+                    opacity: 0.6
+                &_small
+                    background: linear-gradient(0deg, #8934FF, #8934FF), #FF166A
+        &__label
+            font-size: 24px
+            line-height: 30px
+            color: #ffffff
+            max-width: 520px
+            @media screen and ( max-width: 991px )
+                font-size: 20px
+                line-height: 26px
+                max-width: 500px
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+                max-width: 200px
+@keyframes pulse
+    0%
+        transform: scale(0.5)
+    50%
+        transform: scale(1)
+    100%
+        opacity: 0
+@keyframes pulse-extra
+    0%
+        transform: translateX(-50%) translateY(-50%) scale(0.7)
+    100%
+        transform: translateX(-50%) translateY(-50%)
+        opacity: 0

@@ -1,0 +1,258 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: 10
+    overflow-y: scroll
+    &:nth-of-type(1)
+        & .popup
+            border: 2px solid #8C3AFF
+            background: linear-gradient(180deg, #301655 0%, #190832 100%)
+        & .popup__title
+            color: #8C3AFF
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #6200EB
+        & .popup__price
+            color: #AC8EFF
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #8C3AFF
+        & .contacts-form__item
+            & input
+                border: 2px solid #9942FF
+                background-color: #190832
+        & .contacts-form__button
+            border: 2px solid #8C3AFF
+            box-shadow: 0px 0px 47px rgba(140, 58, 255, 0.6), inset 0px 0px 50px rgba(140, 58, 255, 0.4)
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    background-color: #8C3AFF
+    &:nth-of-type(2)
+        & .popup
+            border: 2px solid #FF40F7
+            background: linear-gradient(180deg, #541655 0%, #1B032B 100%)
+        & .popup__title
+            color: #FF40F7
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #FF40F7
+        & .popup__price
+            color: #FF81FA
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #FF81FA
+        & .contacts-form__item
+            & input
+                border: 2px solid #FF40F7
+                background-color: #2C0832
+        & .contacts-form__button
+            border: 2px solid #FF40F7
+            box-shadow: 0px 0px 47px rgba(255, 64, 247, 0.6), inset 0px 0px 50px rgba(255, 64, 247, 0.4)
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    background-color: #FF40F7
+    &:nth-of-type(3)
+        & .popup
+            border: 2px solid #FFCA40
+            background: linear-gradient(180deg, #553816 0%, #322108 100%)
+        & .popup__title
+            color: #FFCA40
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #FFCA40
+        & .popup__price
+            color: #FFDC82
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #FFDC82
+        & .contacts-form__item
+            & input
+                border: 2px solid #FFCA40
+                background-color: #321708
+        & .contacts-form__button
+            border: 2px solid #FFCA40
+            box-shadow: 0px 0px 47px rgba(255, 202, 64, 0.6), inset 0px 0px 50px rgba(255, 202, 64, 0.4)
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    background-color: #FFCA40
+.popup
+    position: absolute
+    width: 885px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 30px
+    @media screen and ( max-width: 1366px )
+        margin-top: 100px
+    z-index: 10
+    border-radius: 22px
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media screen and ( max-width: 991px )
+        width: 700px
+    @media screen and ( max-width: 767px )
+        width: 100%
+        min-height: 100vh
+        margin: 0
+        border-radius: 0
+    &__title
+        font-size: 72px
+        line-height: 72px
+        margin-bottom: 10px
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+        @media screen and ( max-width: 767px )
+            margin-top: 30px
+    &__price
+        font-size: 64px
+        line-height: 77px
+        margin-bottom: 20px
+        @media screen and ( max-width: 1366px )
+            font-size: 36px
+            line-height: 48px
+.close-popup
+    position: absolute
+    top: 35px
+    right: 35px
+    width: 23px
+    height: 23px
+    cursor: pointer
+    &:before
+        content: ''
+        background-color: #fff
+        position: absolute
+        height: 4px
+        width: 40px
+        top: 15px
+        left: -15px
+        transform: rotate(-45deg)
+        border-radius: 14px
+    &:after
+        content: ''
+        background-color: #fff
+        position: absolute
+        height: 4px
+        width: 40px
+        top: 15px
+        left: -15px
+        transform: rotate(45deg)
+        border-radius: 14px
+
+.contacts-form
+    &__item
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px
+        & label
+            font-size: 15px
+            line-height: 18px
+            color: #ffffff
+        & input
+            font-size: 18px
+            line-height: 22px
+            width: 500px
+            color: #ffffff
+            padding: 20px 0 20px 50px
+            @media screen and ( max-width: 767px )
+                width: 320px
+            &::placeholder
+                color: #BEBEBE
+    &__button
+        position: relative
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        letter-spacing: 0.1em
+        cursor: pointer
+        font-size: 20px
+        line-height: 25px
+        position: relative
+        text-decoration: none
+        text-transform: uppercase
+        color: #FBD3FF
+        padding: 20px 50px
+        border: 4px solid #000
+        overflow: hidden
+        transition: all 0.3s ease-in-out
+        margin-top: 25px
+        @media screen and ( max-width: 767px )
+            font-size: 14px
+            line-height: 17px
+        & span
+            transition: all 0.2s ease-out
+            z-index: 2
+        &:after
+            background: #FFF
+            border: 0px solid #8C3AFF
+            content: ""
+            height: 155px
+            left: -75px
+            opacity: .8
+            position: absolute
+            top: -50px
+            -webkit-transform: rotate(35deg)
+            transform: rotate(35deg)
+            width: 50px
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+            z-index: 1
+        &:hover
+            @media screen and ( min-width: 1199px )
+                text-decoration: none
+                & span
+                    color: #1E1939
+                &::after
+                    background: #FFF
+                    border: 20px solid #000
+                    opacity: 0
+                    left: 120%
+                    -webkit-transform: rotate(40deg)
+                    transform: rotate(40deg)
+
+.thank-popup
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(30, 6, 61, 0.8)
+    z-index: 1000000
+    &-dialog
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        margin: auto
+        width: 70%
+        background-color: #1E1939
+        border: 5px solid #FF166A
+        padding: 40px
+        @media (max-width: 991px)
+            width: 80%
+        @media (max-width: 575px)
+            width: 95%
+        &__close
+            position: absolute
+            top: -20px
+            right: -20px
+            border: none
+            background-color: transparent
+            width: 30px
+            height: 30px
+            &:focus
+                outline: none
+        &__title
+            font-size: 42px
+            line-height: 52px
+            text-align: center
+            letter-spacing: 0.07em
+            text-indent: 1px
+            color: black
+            max-width: 703px
+            margin: 0 auto
+            color: #ffffff
+            @media screen and ( max-width: 991px )
+                font-size: 36px
+                line-height: 46px
+            @media screen and ( max-width: 767px )
+                font-size: 24px
+                line-height: 34px
+                padding: 20px 0
+            @media screen and ( max-width: 400px )
+                font-size: 16px
+                line-height: 26px
+                padding: 10px 0

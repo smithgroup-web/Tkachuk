@@ -1,0 +1,222 @@
+.project
+    background-image: url(../img/project/bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 50px 0 150px 0
+    &__title
+        font-size: 64px
+        line-height: 77px
+        color: #ffffff
+        text-align: center
+        text-shadow: 0px 0px 27px #FF659C
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+        @media screen and ( max-width: 1199px )
+            font-size: 48px
+            line-height: 58px
+        @media screen and ( max-width: 991px )
+            font-size: 36px
+            line-height: 46px
+        @media screen and ( max-width: 767px )
+            font-size: 24px
+            line-height: 28px
+        &::after
+            content: ''
+            display: block
+            margin: 20px auto
+            width: 125px
+            height: 5px
+            background-color: #FF166A
+            box-shadow: 0px 0px 10px #FF166A
+            border-radius: 41px
+    &__text
+        font-size: 30px
+        line-height: 36px
+        color: #ffffff
+        max-width: 725px
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 40px
+        @media screen and ( max-width: 1366px )
+            font-size: 28px
+            line-height: 35px
+            max-width: 665px
+        @media screen and ( max-width: 1199px )
+            font-size: 24px
+            line-height: 29px
+            max-width: 702px
+        @media screen and ( max-width: 991px )
+            font-size: 20px
+            line-height: 25px
+            max-width: 560px
+        @media screen and ( max-width: 767px )
+            font-size: 14px
+            line-height: 17px
+            max-width: 350px
+    &__line
+        &:nth-of-type(1)
+            background-color: #9E9E9E
+            box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.8)
+            border-radius: 62px
+            width: 2px
+            height: 130px
+        background-color: #9E9E9E
+        box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.8)
+        border-radius: 62px
+        width: 2px
+        height: 79px
+    &-blocks
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-block
+        display: flex
+        align-items: center
+        @media screen and ( max-width: 767px )
+            flex-direction: column
+            align-items: center
+            transform: none!important
+            padding: 20px 0
+        &_one
+            transform: translateX(43.5%)
+            & .project-block__label
+                max-width: 320px
+                @media screen and ( max-width: 1199px )
+                    max-width: 300px
+        &_two
+            transform: translateX(-43.5%)
+            & .project-block__label
+                max-width: 350px
+                @media screen and ( max-width: 1199px )
+                    max-width: 300px
+                @media screen and ( max-width: 991px )
+                    max-width: 200px
+            & .project-block__title
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    text-align: center
+            & .project-block__num
+                @media screen and ( max-width: 767px )
+                    order: 1
+            & .project-block__line
+                @media screen and ( max-width: 767px )
+                    order: 2
+            & .project-block__text
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    order: 3
+                    text-align: center
+        &_three
+            transform: translateX(44%)
+            & .project-block__label
+                max-width: 550px
+                @media screen and ( max-width: 1366px )
+                    max-width: 485px
+                @media screen and ( max-width: 1199px )
+                    max-width: 380px
+                @media screen and ( max-width: 991px )
+                    max-width: 250px
+        &_four
+            transform: translateX(-43.5%)
+            & .project-block__label
+                max-width: 380px
+                @media screen and ( max-width: 1199px )
+                    max-width: 300px
+            & .project-block__title
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    text-align: center
+            & .project-block__num
+                @media screen and ( max-width: 767px )
+                    order: 1
+            & .project-block__line
+                @media screen and ( max-width: 767px )
+                    order: 2
+            & .project-block__text
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    order: 3
+                    text-align: center
+        &_five
+            transform: translateX(43.5%)
+            & .project-block__label
+                max-width: 450px
+                @media screen and ( max-width: 1199px )
+                    max-width: 310px
+                @media screen and ( max-width: 991px )
+                    max-width: 210px
+        &_six
+            transform: translateX(-43.5%)
+            & .project-block__label
+                max-width: 395px
+                @media screen and ( max-width: 1199px )
+                    max-width: 280px
+                @media screen and ( max-width: 991px )
+                    max-width: 230px
+            & .project-block__title
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    text-align: center
+            & .project-block__num
+                @media screen and ( max-width: 767px )
+                    order: 1
+            & .project-block__line
+                @media screen and ( max-width: 767px )
+                    order: 2
+            & .project-block__text
+                text-align: right
+                @media screen and ( max-width: 767px )
+                    order: 3
+                    text-align: center
+        &__num
+            font-size: 42px
+            line-height: 50px
+            color: #8C79FF
+            text-shadow: 0px 0px 20px #8C79FF
+            & span
+                color: #FF166A
+                text-shadow: 0px 0px 20px #FF166A
+        &__line
+            background-color: #FF166A
+            box-shadow: 0px 0px 17px #FF166A
+            border-radius: 62px
+            width: 70px
+            height: 3px
+            margin: 0 10px
+        &__title
+            font-size: 48px
+            line-height: 54px
+            color: #ffffff
+            @media screen and ( max-width: 1199px )
+                font-size: 36px
+                line-height: 43px
+            @media screen and ( max-width: 991px )
+                font-size: 28px
+                line-height: 35px
+            @media screen and ( max-width: 767px )
+                text-align: center
+        &__label
+            font-size: 27px
+            line-height: 32px
+            color: #ffffff
+            display: block
+            @media screen and ( max-width: 1366px )
+                font-size: 24px
+                line-height: 29px
+            @media screen and ( max-width: 1199px )
+                font-size: 19px
+                line-height: 23px
+            @media screen and ( max-width: 991px )
+                font-size: 16px
+                line-height: 20px
+            @media screen and ( max-width: 767px )
+                text-align: center
+    &__arrow
+        position: relative
+        z-index: 2
+        @media screen and ( max-width: 767px )
+            & img
+                display: block
+                margin: 0 auto
+                width: 50%

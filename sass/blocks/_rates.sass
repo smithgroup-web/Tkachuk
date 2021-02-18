@@ -1,0 +1,333 @@
+.rates
+    padding-top: 100px
+    @media screen and ( max-width: 767px )
+        transform: translateY(-50px)
+    &__title
+        display: block
+        font-size: 64px
+        line-height: 77px
+        color: #ffffff
+        position: relative
+        max-width: 285px
+        margin: 0 auto
+        margin-bottom: 140px
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+            max-width: 250px
+        @media screen and ( max-width: 1199px )
+            font-size: 48px
+            line-height: 57px
+        @media screen and ( max-width: 991px )
+            font-size: 36px
+            line-height: 46px
+            max-width: 170px
+            margin-bottom: 80px
+        &::before
+            content: ''
+            position: absolute
+            top: -20px
+            right: -165px
+            width: 280px
+            height: 10px
+            background-color: #D0D0D0
+            box-shadow: 0px 0px 39px #D0D0D0
+            border-radius: 58px
+            @media screen and ( max-width: 1199px )
+                right: -130px
+            @media screen and ( max-width: 991px )
+                width: 200px
+                right: -100px
+            @media screen and ( max-width: 767px )
+                width: 140px
+                right: -60px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -25px
+            left: -140px
+            width: 171px
+            height: 10px
+            background-color: #FF166A
+            box-shadow: 0px 0px 39px #FF166A
+            border-radius: 58px
+            @media screen and ( max-width: 1199px )
+                left: -100px
+            @media screen and ( max-width: 991px )
+                width: 121px
+                left: -60px
+            @media screen and ( max-width: 767px )
+                width: 81px
+                left: -30px
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: start
+        @media screen and ( max-width: 1199px )
+            flex-direction: column
+            align-items: center
+    &-block
+        width: calc( 34% - 40px )
+        @media screen and ( max-width: 1199px )
+            width: 70%
+        display: flex
+        flex-direction: column
+        border-radius: 13px
+        padding: 70px 30px
+        @media screen and ( max-width: 1199px )
+            align-items: center
+            margin-bottom: 120px
+            &:last-child
+                margin-bottom: 0
+        @media screen and ( max-width: 991px )
+            margin-bottom: 80px
+            &:last-child
+                margin-bottom: 0
+        @media screen and ( max-width: 767px )
+            width: 100%
+        &:nth-of-type(1)
+            border: 2px solid #8C3AFF
+            box-shadow: inset 0px 0px 188px rgba(194, 64, 255, 0.4)
+            & .rates-block__name
+                color: #8C3AFF
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #6200EB
+            & .rates-block__price
+                color: #AC8EFF
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #8C3AFF
+            & .rates-block__circle
+                background-color: #8C3AFF
+                box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7), 0px 0px 19px #8C3AFF
+            & .rates-block__button
+                border: 2px solid #8C3AFF
+                box-shadow: 0px 0px 47px rgba(140, 58, 255, 0.6), inset 0px 0px 50px rgba(140, 58, 255, 0.4)
+                &:hover
+                    @media screen and ( min-width: 1199px )
+                        background-color: #8C3AFF
+        &:nth-of-type(2)
+            border: 2px solid #FF40F7
+            box-shadow: inset 0px 0px 188px rgba(255, 64, 247, 0.4)
+            & .rates-block__name
+                color: #FF40F7
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #FF40F7
+            & .rates-block__price
+                color: #FF81FA
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #8C3AFF
+            & .rates-block__circle
+                background-color: #FF40F7
+                box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7), 0px 0px 19px #FF40F7
+            & .rates-block__button
+                border: 2px solid #FF40F7
+                box-shadow: 0px 0px 47px rgba(255, 64, 247, 0.6), inset 0px 0px 50px rgba(255, 64, 247, 0.4)
+                &:hover
+                    @media screen and ( min-width: 1199px )
+                        background-color: #F163FF
+        &:nth-of-type(3)
+            border: 2px solid #FFCA40
+            box-shadow: inset 0px 0px 188px rgba(255, 202, 64, 0.4)
+            & .rates-block__name
+                color: #FFCA40
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 43px #FFCA40
+            & .rates-block__price
+                color: #FFDC82
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 49px #FFCA40
+            & .rates-block__circle
+                background-color: #FFCA40
+                box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7), 0px 0px 19px #FFCA40
+            & .rates-block__button
+                border: 2px solid #FFCA40
+                box-shadow: 0px 0px 47px rgba(255, 202, 64, 0.6), inset 0px 0px 50px rgba(255, 202, 64, 0.4)
+                &:hover
+                    @media screen and ( min-width: 1199px )
+                        background-color: #FFCA40
+        &__info
+            margin-bottom: 50px
+        &__name
+            font-size: 48px
+            line-height: 48px
+            margin-bottom: 10px
+            text-align: center
+            @media screen and ( max-width: 1199px )
+                font-size: 96px
+                line-height: 96px
+            @media screen and ( max-width: 991px )
+                font-size: 72px
+                line-height: 72px
+            @media screen and ( max-width: 767px )
+                font-size: 64px
+                line-height: 64px
+        &__price
+            font-size: 26px
+            line-height: 32px
+            text-align: center
+            margin-bottom: 50px
+            position: relative
+            &_old
+                margin-bottom: 0px!important
+                padding: 5px 0
+                @media screen and ( max-width: 991px )
+                    padding: 10px 0
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    background-image: url(../img/rates_line.svg)
+                    background-size: 100% 170%
+                    background-position: center center
+                    background-repeat: no-repeat
+                    @media screen and ( max-width: 991px )
+                        background-size: 100% 200%
+            @media screen and ( max-width: 1199px )
+                font-size: 48px
+                line-height: 58px
+                margin-bottom: 35px
+            @media screen and ( max-width: 991px )
+                font-size: 40px
+                line-height: 40px
+            @media screen and ( max-width: 767px )
+                font-size: 32px
+                line-height: 32px
+        &__point
+            display: flex
+            align-items: center
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
+        &__circle
+            min-width: 12px
+            min-height: 12px
+            border-radius: 50%
+            margin-right: 20px
+        &__text
+            font-size: 18px
+            line-height: 22px
+            color: #ffffff
+            @media screen and ( max-width: 1199px )
+                font-size: 24px
+                line-height: 32px
+                max-width: 385px
+            @media screen and ( max-width: 991px )
+                font-size: 20px
+                line-height: 26px
+                max-width: 330px
+            @media screen and ( max-width: 767px )
+                font-size: 18px
+                line-height: 24px
+                max-width: 270px
+        &__button
+            display: inline-block
+            outline: none
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            letter-spacing: 0.1em
+            cursor: pointer
+            font-size: 15px
+            line-height: 18px
+            position: relative
+            text-decoration: none
+            text-transform: uppercase
+            color: #FBD3FF
+            padding: 15px 50px
+            overflow: hidden
+            transition: all 0.3s ease-in-out
+            @media screen and ( max-width: 1199px )
+                font-size: 24px
+                line-height: 28px
+                max-width: 360px
+                width: 100%
+                padding: 28px 50px
+                transform: none
+                left: 0
+            @media screen and ( max-width: 991px )
+                font-size: 20px
+                line-height: 24px
+                padding: 20px 40px
+                max-width: 320px
+            @media screen and ( max-width: 767px )
+                font-size: 18px
+                line-height: 22px
+            & span
+                transition: all 0.2s ease-out
+                z-index: 2
+                color: #FBD3FF
+            &:after
+                background: #FFF
+                border: 0px solid #F163FF
+                content: ""
+                height: 155px
+                left: -75px
+                opacity: .8
+                position: absolute
+                top: -50px
+                -webkit-transform: rotate(35deg)
+                transform: rotate(35deg)
+                width: 50px
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+                z-index: 1
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    text-decoration: none
+                    & span
+                        color: #1E1939
+                    &::after
+                        background: #FFF
+                        border: 20px solid #000
+                        opacity: 0
+                        left: 120%
+                        -webkit-transform: rotate(40deg)
+                        transform: rotate(40deg)
+    &__foundation
+        display: block
+        font-size: 60px
+        line-height: 73px
+        color: #ffffff
+        position: relative
+        margin: 0 auto
+        margin-top: 140px
+        margin-bottom: 60px
+        text-align: center
+        @media screen and ( max-width: 1366px )
+            font-size: 56px
+            line-height: 56px
+            max-width: 985px
+        @media screen and ( max-width: 1199px )
+            font-size: 48px
+            line-height: 58px
+        @media screen and ( max-width: 991px )
+            font-size: 36px
+            line-height: 46px
+        @media screen and ( max-width: 767px )
+            font-size: 18px
+            line-height: 28px
+            margin-top: 100px
+            margin-bottom: 30px
+        &::before
+            content: ''
+            position: absolute
+            top: -20px
+            left: 30px
+            width: 280px
+            height: 10px
+            background-color: #D0D0D0
+            box-shadow: 0px 0px 39px #D0D0D0
+            border-radius: 58px
+            @media screen and ( max-width: 767px )
+                width: 120px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -25px
+            right: 0
+            width: 400px
+            height: 10px
+            background-color: #FF166A
+            box-shadow: 0px 0px 39px #FF166A
+            border-radius: 58px
+            @media screen and ( max-width: 767px )
+                width: 170px
+                right: 10px
